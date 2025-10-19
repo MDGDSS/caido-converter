@@ -1,0 +1,255 @@
+@import "./caido.css";
+@import "./primevue.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Override background colors for converter */
+#plugin--converter {
+  background-color: var(--surface-0) !important;
+}
+
+#plugin--converter * {
+  background-color: inherit;
+}
+
+#plugin--converter .bg-surface-0 {
+  background-color: var(--surface-0) !important;
+}
+
+/* Force text visibility */
+#plugin--converter .text-surface-900 {
+  color: var(--surface-900) !important;
+}
+
+#plugin--converter .text-surface-800 {
+  color: var(--surface-800) !important;
+}
+
+#plugin--converter .text-surface-700 {
+  color: var(--surface-700) !important;
+}
+
+#plugin--converter .text-surface-600 {
+  color: var(--surface-600) !important;
+}
+
+/* Ensure textarea text is visible */
+#plugin--converter textarea {
+  color: var(--surface-900) !important;
+}
+
+#plugin--converter input {
+  color: var(--surface-900) !important;
+}
+
+/* Ensure placeholder text is visible */
+#plugin--converter textarea::placeholder {
+  color: var(--surface-500) !important;
+}
+
+#plugin--converter input::placeholder {
+  color: var(--surface-500) !important;
+}
+
+/* Ensure buttons are visible */
+#plugin--converter .p-button {
+  background-color: var(--surface-200) !important;
+  border-color: var(--surface-300) !important;
+  color: var(--surface-900) !important;
+}
+
+#plugin--converter .p-button:hover {
+  background-color: var(--surface-300) !important;
+  border-color: var(--surface-400) !important;
+}
+
+#plugin--converter .p-button:disabled {
+  background-color: var(--surface-100) !important;
+  border-color: var(--surface-200) !important;
+  color: var(--surface-500) !important;
+}
+
+/* Ensure button icons are visible */
+#plugin--converter .p-button .p-button-icon {
+  color: var(--surface-700) !important;
+}
+
+#plugin--converter .p-button:hover .p-button-icon {
+  color: var(--surface-900) !important;
+}
+
+#plugin--converter .p-button:disabled .p-button-icon {
+  color: var(--surface-400) !important;
+}
+
+/* Make all icons visible with yellow color - ULTRA STRONG overrides */
+#plugin--converter i,
+#plugin--converter .pi,
+#plugin--converter .p-button-icon,
+#plugin--converter .p-button .p-button-icon,
+#plugin--converter .p-button .pi,
+#plugin--converter [class*="pi-"],
+#plugin--converter * i,
+#plugin--converter * .pi,
+#plugin--converter * [class*="pi-"],
+#plugin--converter * * i,
+#plugin--converter * * .pi,
+#plugin--converter * * [class*="pi-"] {
+  color: #fbbf24 !important; /* yellow-400 */
+  fill: #fbbf24 !important;
+  stroke: #fbbf24 !important;
+}
+
+#plugin--converter .p-button:hover .p-button-icon,
+#plugin--converter .p-button:hover .pi,
+#plugin--converter .p-button:hover i {
+  color: #f59e0b !important; /* yellow-500 */
+  fill: #f59e0b !important;
+  stroke: #f59e0b !important;
+}
+
+#plugin--converter .p-button:disabled .p-button-icon,
+#plugin--converter .p-button:disabled .pi,
+#plugin--converter .p-button:disabled i {
+  color: #d97706 !important; /* yellow-600 */
+  fill: #d97706 !important;
+  stroke: #d97706 !important;
+}
+
+/* NUCLEAR OPTION - Force ALL icons to be yellow with SIZE */
+#plugin--converter * {
+  --icon-color: #fbbf24 !important;
+}
+
+#plugin--converter i::before,
+#plugin--converter .pi::before,
+#plugin--converter [class*="pi-"]::before {
+  color: #fbbf24 !important;
+  width: 16px !important;
+  height: 16px !important;
+  font-size: 16px !important;
+  display: inline-block !important;
+}
+
+/* Force all icon elements to have size */
+#plugin--converter i,
+#plugin--converter .pi,
+#plugin--converter [class*="pi-"],
+#plugin--converter .p-button-icon,
+#plugin--converter .p-button .p-button-icon,
+#plugin--converter .p-button i,
+#plugin--converter .p-button .pi,
+#plugin--converter .p-button [class*="pi-"] {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  font-size: 16px !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
+
+/* ULTIMATE ICON VISIBILITY - Target every possible icon element with SIZE */
+#plugin--converter button i,
+#plugin--converter button .pi,
+#plugin--converter button [class*="pi-"],
+#plugin--converter .p-button i,
+#plugin--converter .p-button .pi,
+#plugin--converter .p-button [class*="pi-"],
+#plugin--converter .p-button .p-button-icon,
+#plugin--converter .p-button .p-button-label,
+#plugin--converter .p-button .p-button-label i,
+#plugin--converter .p-button .p-button-label .pi,
+#plugin--converter .p-button .p-button-label [class*="pi-"],
+#plugin--converter .p-button .p-button-label::before,
+#plugin--converter .p-button .p-button-label::after,
+#plugin--converter .p-button::before,
+#plugin--converter .p-button::after,
+#plugin--converter .p-button *::before,
+#plugin--converter .p-button *::after,
+#plugin--converter .p-button * *::before,
+#plugin--converter .p-button * *::after {
+  color: #fbbf24 !important;
+  fill: #fbbf24 !important;
+  stroke: #fbbf24 !important;
+  background-color: transparent !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  font-size: 16px !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+}
+
+/* Force icon visibility on hover and focus */
+#plugin--converter .p-button:hover i,
+#plugin--converter .p-button:hover .pi,
+#plugin--converter .p-button:hover [class*="pi-"],
+#plugin--converter .p-button:focus i,
+#plugin--converter .p-button:focus .pi,
+#plugin--converter .p-button:focus [class*="pi-"],
+#plugin--converter .p-button:active i,
+#plugin--converter .p-button:active .pi,
+#plugin--converter .p-button:active [class*="pi-"] {
+  color: #f59e0b !important;
+  fill: #f59e0b !important;
+  stroke: #f59e0b !important;
+}
+
+/* Target PrimeVue specific icon classes with SIZE */
+#plugin--converter .pi-upload,
+#plugin--converter .pi-plus,
+#plugin--converter .pi-times,
+#plugin--converter .pi-refresh,
+#plugin--converter .pi-copy,
+#plugin--converter .pi-arrow-right,
+#plugin--converter .pi-arrow-left,
+#plugin--converter .pi-arrow-up,
+#plugin--converter .pi-arrow-down,
+#plugin--converter .pi-check,
+#plugin--converter .pi-exclamation-triangle,
+#plugin--converter .pi-info-circle {
+  color: #fbbf24 !important;
+  fill: #fbbf24 !important;
+  stroke: #fbbf24 !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  max-width: 16px !important;
+  max-height: 16px !important;
+  font-size: 16px !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+}
+
+/* Ensure textareas take full width and height with vw units */
+#plugin--converter textarea {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  height: 20vw !important;
+  min-height: 20vw !important;
+}
+
+#plugin--converter .p-inputtextarea {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  height: 20vw !important;
+  min-height: 20vw !important;
+}
+
+/* Force textarea height with even stronger selectors using vw */
+#plugin--converter * textarea,
+#plugin--converter * .p-inputtextarea {
+  height: 20vw !important;
+  min-height: 20vw !important;
+}

@@ -1,6 +1,6 @@
 # 🔄 Caido Converter Plugin
 
-A powerful data converter plugin for Caido that provides encoding, decoding, and transformation capabilities similar to Burp Suite's converter tool, but with a modern Caido-friendly interface.
+A powerful data converter plugin for Caido that provides encoding, decoding, and transformation capabilities.
 
 
 ###  **Encoding & Decoding**
